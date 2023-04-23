@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+  font-family: "Hind";
+  background: var(--background);
+
+  color: white;
+  line-height: 1.6;
+  border: 1px solid black;
+}
+
+:root {
+  --background: rgb(68, 0, 255);
+  --background2: rgb(162, 91, 255);
+  --maincolor: rgb(76, 0, 255);
+  --maincolor-variant: rgb(91, 15, 255);
+  --transition: all 400ms ease;
+  --container-large: 75%;
+  --container-medium: 85%;
+  --container-small: 90%;
+}
+
+.container {
+  width: var(--container-large);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: grey;
+}
+
+section > h2 {
+  color: var(--maincolor);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: grey;
+}
+
+a {
+  color: var(--maincolor);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: white;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: white;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--background2);
+  transition: var(--transition);
+  background-color: var(--maincolor);
+}
+
+.btn:hover {
+  background: white;
+  color: var(--background);
+  border-color: transparent;
+}
+#root > section > h2 {
+  color: white;
+}
+
+.selfie {
+  border-radius: 50%;
+  border: 2px solid black;
+}

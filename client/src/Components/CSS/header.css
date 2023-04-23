@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+:root {
+  --background: rgb(68, 0, 255);
+  --background2: rgb(181, 131, 245);
+  --maincolor: rgb(84, 11, 254);
+  --maincolor-variant: rgb(91, 15, 255);
+  --color-white: white;
+  --color-light: grey;
+}
+
+#root > header > h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 11vh;
+  padding: 0 2rem;
+  background-color: var(--maincolor);
+  color: white;
+  justify-content: center;
+  padding-left: 6vw;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+nav a:hover {
+  color: #00ddff;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 2rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--maincolor);
+    transition: 0.7s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+    top: 0rem;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+#root > header > nav > div {
+  padding-left: 3.7vw;
+}

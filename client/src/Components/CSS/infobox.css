@@ -1,0 +1,58 @@
+img {
+  height: 20rem;
+  width: 19rem;
+}
+.projects {
+  height: 20rem;
+  width: 16rem;
+}
+
+#Projects > div > article > svg {
+  width: 10%;
+  height: 10%;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1);
+  gap: 2.5rem;
+  text-align: center;
+}
+
+p {
+  margin: 1.2rem 0 2rem;
+  font-size: 1.3rem;
+}
+
+.portfolio-item {
+  background: transparent;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.portfolio-item:hover {
+  border-color: var(--maincolor-variant);
+  background: rgba(162, 91, 255, 0.46);
+}
+.portfolio-item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio-item h3 {
+  margin: 1.1rem 0 2rem;
+  font-size: 1.6rem;
+}
+
+@media screen and(max-width:1024px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+@media screen and(max-width:600px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

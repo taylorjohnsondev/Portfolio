@@ -1,0 +1,34 @@
+h2,
+h1 {
+  text-align: center;
+  
+}
+
+form {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0.2rem solid black;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0.2rem solid black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contact > form > input[type=submit]:hover {
+  opacity: 90%;
+}
+
