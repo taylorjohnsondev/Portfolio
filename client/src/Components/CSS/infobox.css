@@ -1,12 +1,13 @@
 img {
   height: 20rem;
-  width: 19rem;
+  width: 19.5rem;
 }
 .projects {
-  height: 20rem;
   width: 16rem;
+  height: auto;
+  border-radius: 1rem;
 }
-
+ 
 #Projects > div > article > svg {
   width: 10%;
   height: 10%;
@@ -32,7 +33,6 @@ p {
 
 .portfolio-item:hover {
   border-color: var(--maincolor-variant);
-  background: rgba(162, 91, 255, 0.46);
 }
 .portfolio-item-image {
   border-radius: 1.5rem;

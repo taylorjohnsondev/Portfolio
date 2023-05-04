@@ -1,13 +1,16 @@
 h2,
 h1 {
   text-align: center;
-  
 }
 
 form {
   margin: 0 auto;
   width: 90%;
   max-width: 600px;
+  background-color: rgb(68, 0, 255);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 2px solid white;
 }
 
 input {
@@ -15,7 +18,8 @@ input {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 0.2rem solid black;
+  border: 0.2rem solid rgb(68, 0, 255);
+  border-radius: 1rem;
 }
 
 textarea {
@@ -24,11 +28,23 @@ textarea {
   padding: 1rem 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 0.2rem solid black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0.2rem solid rgb(68, 0, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 1rem;
+
 }
 
-#contact > form > input[type=submit]:hover {
-  opacity: 90%;
+input[type="submit"] {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
+input[type="submit"]:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
