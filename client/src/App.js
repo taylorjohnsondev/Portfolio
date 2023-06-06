@@ -14,9 +14,10 @@ const App = () => {
 
       <Routes>
         <Route exact path="/" element={<Homepage />}></Route>
-        <Route exact path="/contact" element={<Contact />}></Route>
+        <Route exact path="/contact" element={<Contact />}></Route> 
         <Route exact path="/projects" element={<Projects />}></Route>
         <Route exact path="/resume" element={<Resume />}></Route>
+        <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
     </>
   );

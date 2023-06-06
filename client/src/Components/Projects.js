@@ -2,6 +2,7 @@ import "../Components/CSS/projects.css";
 const Projects = () => {
   return (
     <section id="Projects">
+      <h1>My Projects</h1>
       <div className="projects-container">
         <article className="portfolio-item">
           <div className="portfolio-item-image">
@@ -36,7 +37,7 @@ const Projects = () => {
           <p>
             A group project that me and a another student worked on together, it
             is a game of connect 4 that tracks if you won in any direction. Made
-            using JavaScript.{" "}
+            using JavaScript.
           </p>
           <a
             href="https://github.com/KenzieAcademy-Students/teamwork-assessment-connect-four-taylorjohnsondev"

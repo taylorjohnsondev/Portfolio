@@ -17,11 +17,11 @@ function Header() {
         <Navbar.Brand href="/">Taylor Johnson</Navbar.Brand>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="justify-content-center" navbarScroll>
-            <Nav.Link as={Link} to="/resume" onClick={showHeader}>
-              Resume
-            </Nav.Link>
             <Nav.Link as={Link} to="/projects" onClick={showHeader}>
               Projects
+            </Nav.Link>
+            <Nav.Link as={Link} to="/resume" onClick={showHeader}>
+              Resume
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" onClick={showHeader}>
               Contact
@@ -33,7 +33,6 @@ function Header() {
         <button className="nav-btn" onClick={showHeader}>
           <FaTimes />
         </button>
-
       </Navbar>
       <button className="nav-btn" onClick={showHeader}>
         <FaBars />

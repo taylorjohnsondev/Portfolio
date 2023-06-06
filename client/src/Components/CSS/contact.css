@@ -10,7 +10,7 @@ form {
   background-color: rgb(68, 0, 255);
   border-radius: 1rem;
   padding: 2rem;
-  border: 2px solid white;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -42,6 +42,7 @@ input[type="submit"] {
   border: 2px solid white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  
 }
 
 input[type="submit"]:hover {
