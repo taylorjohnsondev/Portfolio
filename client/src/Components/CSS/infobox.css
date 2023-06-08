@@ -2,19 +2,21 @@ img {
   height: 20rem;
   width: 19.5rem;
 }
+
 .projects {
   width: 16rem;
   height: auto;
   border-radius: 1rem;
 }
- 
+
 #Projects > div > article > svg {
   width: 10%;
   height: 10%;
 }
-.projects-container {
+
+.infoboxes-container {
   display: grid;
-  grid-template-columns: repeat(3, 1);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   text-align: center;
 }
@@ -34,6 +36,7 @@ p {
 .portfolio-item:hover {
   border-color: var(--maincolor-variant);
 }
+
 .portfolio-item-image {
   border-radius: 1.5rem;
   overflow: hidden;
@@ -44,15 +47,21 @@ p {
   font-size: 1.6rem;
 }
 
-@media screen and(max-width:1024px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+.infoboxes-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .infoboxes-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media screen and(max-width:600px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+
+@media screen and (max-width: 600px) {
+  .infoboxes-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

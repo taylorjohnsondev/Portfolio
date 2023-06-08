@@ -12,14 +12,11 @@ function Header() {
   };
 
   return (
-    <header>
+    <header id="header">
       <Navbar ref={navRef} bg="dark" variant={"dark"} expand="lg">
         <Navbar.Brand href="/">Taylor Johnson</Navbar.Brand>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="justify-content-center" navbarScroll>
-            <Nav.Link as={Link} to="/projects" onClick={showHeader}>
-              Projects
-            </Nav.Link>
             <Nav.Link as={Link} to="/resume" onClick={showHeader}>
               Resume
             </Nav.Link>

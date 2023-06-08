@@ -34,18 +34,3 @@ textarea {
 
 }
 
-input[type="submit"] {
-  background-color: transparent;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  
-}
-
-input[type="submit"]:hover {
-  opacity: 0.9;
-  transform: scale(1.1);
-}

@@ -117,6 +117,7 @@ a:hover {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 2;
 }
 
 .me.animate {
@@ -130,5 +131,27 @@ a:hover {
   margin-bottom: 1rem;
   max-width: 10rem;
   max-height: 10rem;
+  border: 2px solid white;
+}
+ 
+.infoBtn {
+  background-color: red;
 }
 
+.arrow {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 2.5rem;
+  animation: arrowAnimation 0.6s infinite alternate;
+  padding-top: 1.5rem;
+}
+
+@keyframes arrowAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}

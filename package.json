@@ -24,5 +24,8 @@
   ],
   "devDependencies": {
     "dotenv-webpack": "^8.0.1"
+  },
+  "dependencies": {
+    "react-scroll": "^1.8.9"
   }
 }

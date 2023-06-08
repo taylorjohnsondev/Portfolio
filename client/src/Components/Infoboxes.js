@@ -8,7 +8,7 @@ const Infobox = () => {
   return (
     <section id="Projects">
       <h1>My Skills</h1>
-      <div className="projects-container">
+      <div className="infoboxes-container">
         <article className="portfolio-item">
           <DiReact />
           <h3>React</h3>

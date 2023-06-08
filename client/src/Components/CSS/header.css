@@ -69,6 +69,16 @@ nav {
     opacity: 1;
   }
 
+  header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .me {
+    z-index: 2;
+    
+  }
+
   header nav {
     position: fixed;
     top: 0;
@@ -83,6 +93,7 @@ nav {
     background-color: var(--maincolor);
     transition: 0.7s;
     transform: translateY(-100vh);
+    border-radius: 0 0 2rem 2rem;
   }
 
   header .responsive_nav {
