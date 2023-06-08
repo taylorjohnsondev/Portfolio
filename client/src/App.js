@@ -5,7 +5,7 @@ import Contact from "./Components/Contact";
 import React from "react";
 import Homepage from "./Components/Homepage";
 import { Route, Routes } from "react-router-dom";
-
+import { Navigate } from "react-router-dom";
 const App = () => {
   return (
     <>
@@ -14,7 +14,7 @@ const App = () => {
         <Route exact path="/" element={<Homepage />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
         <Route exact path="/resume" element={<Resume />}></Route>
-        <Route path="*" element={<h1>404 Page Not Found</h1>} />
+        <Route path="*" element={<Navigate to="/" />} /> 
       </Routes>
     </>
   );

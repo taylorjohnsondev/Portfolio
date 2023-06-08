@@ -24,6 +24,25 @@ const Projects = () => {
       </article>
       <article className="portfolio-item">
         <div className="portfolio-item-image">
+          <img className="projects" src="tgram.png" alt="Snippets" />
+        </div>
+
+        <h3>TGram</h3>
+        <h4>Developer/Backend</h4>
+        <p>
+          A functional social media where you can make posts, similar to
+          Instagram. You can edit your profile, and interact with other users
+          and their posts. Made using React.
+        </p>
+        <button
+          href="https://github.com/taylorjohnsondev/TGram"
+          className="btn" 
+        >
+          Code
+        </button>
+      </article>
+      <article className="portfolio-item">
+        <div className="portfolio-item-image">
           <img className="projects" src="connect4.png" alt="Connect 4" />
         </div>
 
@@ -40,24 +59,6 @@ const Projects = () => {
         >
           Play
         </a>
-      </article>
-      <article className="portfolio-item">
-        <div className="portfolio-item-image">
-          <img className="projects" src="snippets.png" alt="Snippets" />
-        </div>
-
-        <h3>Social Media</h3>
-        <h4>Developer</h4>
-        <p>
-          A functional social media where you can make posts, edit your profile,
-          and reply to other posts. Made using React.
-        </p>
-        <button
-          href="https://github.com/KenzieAcademy-Students/snippets-app-taylorjohnsondev"
-          className="btn"
-        >
-          Code
-        </button> 
       </article>
     </section>
   );

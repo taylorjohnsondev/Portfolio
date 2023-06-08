@@ -58,10 +58,18 @@ p {
   .infoboxes-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  #Projects > div > article > svg {
+    width: 20%;
+    height: 20%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .infoboxes-container {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #Projects > div > article > svg {
+    width: 20%;
+    height: 20%;
   }
 }

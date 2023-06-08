@@ -34,3 +34,7 @@ textarea {
 
 }
 
+.toast-container-custom {
+  background-color: transparent;
+  box-shadow: none;
+}

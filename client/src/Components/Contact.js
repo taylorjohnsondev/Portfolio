@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../Components/CSS/contact.css";
-
 
 const Contact = () => {
   const form = useRef();
@@ -10,12 +11,19 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_5shp1q8", "template_gwkay9y", form.current, process.env.REACT_APP_EMAILJS_KEY)
+      .sendForm(
+        "service_5shp1q8",
+        "template_gwkay9y",
+        form.current,
+        process.env.REACT_APP_EMAILJS_KEY
+      )
       .then(
         (result) => {
+          toast.success("Email sent successfully!"); // Display success toast
           console.log("sent");
         },
         (error) => {
+          toast.error("Error sending email!"); // Display error toast
           console.log(error);
         }
       );
@@ -23,7 +31,6 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h1>Contact</h1>
       <form ref={form} onSubmit={sendEmail}>
         <label>
           Name
@@ -37,8 +44,20 @@ const Contact = () => {
           Message
           <textarea name="message" required />
         </label>
-        <input type="submit" value="Send" className="btn"/>
+        <input type="submit" value="Send" className="btn" />
       </form>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </section>
   );
 };
