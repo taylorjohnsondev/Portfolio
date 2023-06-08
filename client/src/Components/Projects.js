@@ -34,12 +34,12 @@ const Projects = () => {
           Instagram. You can edit your profile, and interact with other users
           and their posts. Made using React.
         </p>
-        <button
+        <a
           href="https://github.com/taylorjohnsondev/TGram"
           className="btn" 
         >
           Code
-        </button>
+        </a>
       </article>
       <article className="portfolio-item">
         <div className="portfolio-item-image">
@@ -49,8 +49,8 @@ const Projects = () => {
         <h3>Connect 4</h3>
         <h4>Developer</h4>
         <p>
-          A group project that me and a another student worked on together, it
-          is a game of connect 4 that tracks if you win in any direction. Made
+          A group project that me and another student worked on together, it
+          is a game of Connect 4 that tracks if you win in any direction. Made
           using JavaScript.
         </p>
         <a

@@ -46,12 +46,14 @@ const Homepage = () => {
           Stack Web Development, the skills I use are below, thanks for checking
           out my portfolio!
         </p>
+        <div className="btnContainer">
         <button className="btn" onClick={scrollToInfobox}>
           View my Skills
         </button>
         <button className="btn" onClick={scrollToProjects}>
           View my Projects
         </button>
+        </div> 
       </div>
 
       <div id="infoboxSection">
