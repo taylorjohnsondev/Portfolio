@@ -32,6 +32,7 @@ p {
     grid-template-columns: repeat(2, minmax(17rem, 1fr));
     grid-auto-rows: 25rem;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -43,7 +44,6 @@ p {
 
 .portfolio-item:hover {
   border-color: var(--maincolor-variant);
-  background: rgba(162, 91, 255, 0.46);
 }
 .portfolio-item-image {
   border-radius: 1.5rem;
