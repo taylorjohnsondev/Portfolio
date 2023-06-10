@@ -79,7 +79,7 @@ nav {
     
   }
 
-  header nav {
+  header nav { 
     position: fixed;
     top: 0;
     left: 0;
@@ -94,6 +94,9 @@ nav {
     transition: 0.7s;
     transform: translateY(-100vh);
     border-radius: 0 0 2rem 2rem;
+    border: 2px solid white;
+    border-top: 0px
+
   }
 
   header .responsive_nav {
@@ -112,6 +115,3 @@ nav {
   }
 }
 
-#root > header > nav > div {
-  padding-left: 3.7vw;
-}

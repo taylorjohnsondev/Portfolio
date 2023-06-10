@@ -5,7 +5,7 @@ img {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(17rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   text-align: center;
 }
