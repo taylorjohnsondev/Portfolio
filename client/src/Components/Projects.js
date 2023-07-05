@@ -16,10 +16,10 @@ const Projects = () => {
           receive reviews. Made using React, deployed using AWS EC2.
         </p>
         <a
-          href="https://github.com/taylorjohnsondev/mern-capstone"
+          href="https://memoriesbooking.netlify.app/"
           className="btn"
         >
-          Code
+          Link
         </a>
       </article>
       <article className="portfolio-item">
@@ -32,13 +32,13 @@ const Projects = () => {
         <p>
           A functional social media where you can make posts, similar to
           Instagram. You can edit your profile, and interact with other users
-          and their posts. Made using React.
+          and their posts. Made using React, deployed using Netlify and Render.
         </p>
         <a
-          href="https://github.com/taylorjohnsondev/TGram"
+          href="https://tgram-social.netlify.app/"
           className="btn" 
         >
-          Code
+          Link
         </a>
       </article>
       <article className="portfolio-item">
