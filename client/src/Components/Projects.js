@@ -11,15 +11,15 @@ const Projects = () => {
         <h3>Memories Booking</h3>
         <h4>Developer/Backend</h4>
         <p>
-          Group project made from scratch, it is a photographer booking website
+          Project made at Kenzie Academy, it is a photographer booking website
           where you can create an account, get booked, upload photos, and
-          receive reviews. Made using React, deployed using AWS EC2.
+          receive reviews. Made using React, deployed using AWS EC2 but is currently on Netlify. 
         </p>
         <a
           href="https://memoriesbooking.netlify.app/"
           className="btn"
         >
-          Link
+          View
         </a>
       </article>
       <article className="portfolio-item">
@@ -38,7 +38,7 @@ const Projects = () => {
           href="https://tgram-social.netlify.app/"
           className="btn" 
         >
-          Link
+          View
         </a>
       </article>
       <article className="portfolio-item">
@@ -49,7 +49,7 @@ const Projects = () => {
         <h3>Connect 4</h3>
         <h4>Developer</h4>
         <p>
-          A group project that me and another student worked on together, it
+          Project made at Kenzie Academy, it
           is a game of Connect 4 that tracks if you win in any direction. Made
           using JavaScript.
         </p>
@@ -57,7 +57,7 @@ const Projects = () => {
           href="https://kenzieacademy-students.github.io/teamwork-assessment-connect-four-taylorjohnsondev/"
           className="btn"
         >
-          Play
+          View
         </a>
       </article>
     </section>
