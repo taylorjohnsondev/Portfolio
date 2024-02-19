@@ -42,7 +42,7 @@ const Homepage = () => {
         <h1>Taylor Johnson</h1>
         <h3>Full-Stack Web Developer</h3>
         <p>
-          19 year old from Florida, currently have a year of experience in Full
+          Currently have a year and a half of experience in Full
           Stack Web Development, the skills I use are below, thanks for checking
           out my portfolio!
         </p>
